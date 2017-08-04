@@ -23,14 +23,14 @@ a new branch for your work on the next question!
 */
 
 // Write your code here
-// function sum(a,b){ //eslint-disable-line
-//     var total = a + b;
-//     return [ total, 'The sum of ' + a + ' and ' + b +' is ' + total + '.' ];
-//     // returns array first element = sum, second = string like example
-// }
+function sum(a,b){ //eslint-disable-line
+  var total = a + b;
+  return [ total, 'The sum of ' + a + ' and ' + b + ' is ' + total + '.' ];
+    // returns array first element = sum, second = string like example
+}
 
-// // Here is the test for sum(); uncomment it to run it
-// testSum(4, 7);
+// Here is the test for sum(); uncomment it to run it
+//testSum(4, 7);
 
 
 
@@ -63,8 +63,7 @@ function multiply(a,b){ //eslint-disable-line
 }
 
 // Here is the test for multiply(); uncomment it to run it
-testMultiply(5,9);
-
+//testMultiply(5,9);
 
 /////////////////////////////////////
 /* Problem 3
@@ -97,11 +96,14 @@ new branch for your work on the next question!
 
 // Write your code here
 function sumAndMultiply(a,b,c){ //eslint-disable-line
+  var sumC = sum(sum(a,b)[0],c)[0];
+  var multi = multiply(multiply(a,b)[0],c)[0];
 
+  return [sumC,multi, + a + ' and ' + b + ' and ' + c + ' sum to ' + sumC + '.' , 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + multi + '.'];
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 
 /////////////////////////////////////
