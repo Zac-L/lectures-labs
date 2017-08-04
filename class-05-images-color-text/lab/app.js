@@ -23,14 +23,14 @@ a new branch for your work on the next question!
 */
 
 // Write your code here
-function sum(a,b){ //eslint-disable-line
-    var total = a + b;
-    return [ total, 'The sum of ' + a + ' and ' + b +' is ' + total + '.' ];
-    // returns array first element = sum, second = string like example
-}
+// function sum(a,b){ //eslint-disable-line
+//     var total = a + b;
+//     return [ total, 'The sum of ' + a + ' and ' + b +' is ' + total + '.' ];
+//     // returns array first element = sum, second = string like example
+// }
 
-// Here is the test for sum(); uncomment it to run it
-testSum(4, 7);
+// // Here is the test for sum(); uncomment it to run it
+// testSum(4, 7);
 
 
 
@@ -56,11 +56,14 @@ create a new branch for your work on the next question!
 
 // Write your code here
 function multiply(a,b){ //eslint-disable-line
+  var total = a * b;
+
+  return [total, 'The product of ' + a + ' and ' + b + ' is ' + total + '.' ];
 
 }
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+testMultiply(5,9);
 
 
 /////////////////////////////////////
