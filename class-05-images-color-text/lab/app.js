@@ -23,6 +23,7 @@ a new branch for your work on the next question!
 */
 
 // Write your code here
+<<<<<<< HEAD
 // function sum(a,b){ //eslint-disable-line
 //     var total = a + b;
 //     return [ total, 'The sum of ' + a + ' and ' + b +' is ' + total + '.' ];
@@ -31,6 +32,16 @@ a new branch for your work on the next question!
 
 // // Here is the test for sum(); uncomment it to run it
 // testSum(4, 7);
+=======
+function sum(a,b){ //eslint-disable-line
+  var total = a + b;
+  return [ total, 'The sum of ' + a + ' and ' + b + ' is ' + total + '.' ];
+    // returns array first element = sum, second = string like example
+}
+
+// Here is the test for sum(); uncomment it to run it
+//testSum(4, 7);
+>>>>>>> ff8a5a1afaf2c7865badf3d796dcbf8d2d02b7e0
 
 
 
@@ -57,12 +68,21 @@ create a new branch for your work on the next question!
 // Write your code here
 function multiply(a,b){ //eslint-disable-line
   var total = a * b;
+<<<<<<< HEAD
+=======
+
+  return [total, 'The product of ' + a + ' and ' + b + ' is ' + total + '.' ];
+>>>>>>> ff8a5a1afaf2c7865badf3d796dcbf8d2d02b7e0
 
   return [ total, 'The product of ' + a + ' and ' + b + ' is ' + total + '.' ];
 }
 
 // Here is the test for multiply(); uncomment it to run it
+<<<<<<< HEAD
 testMultiply(5,9);
+=======
+//testMultiply(5,9);
+>>>>>>> ff8a5a1afaf2c7865badf3d796dcbf8d2d02b7e0
 
 /////////////////////////////////////
 /* Problem 3
@@ -95,11 +115,14 @@ new branch for your work on the next question!
 
 // Write your code here
 function sumAndMultiply(a,b,c){ //eslint-disable-line
+  var sumC = sum(sum(a,b)[0],c)[0];
+  var multi = multiply(multiply(a,b)[0],c)[0];
 
+  return [sumC,multi, + a + ' and ' + b + ' and ' + c + ' sum to ' + sumC + '.' , 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + multi + '.'];
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+//testSumAndMultiply(4,7,5);
 
 
 /////////////////////////////////////
@@ -129,11 +152,14 @@ new branch for your work on the next question!
 var testArray = [2,3,4]; //eslint-disable-line
 
 function sumArray(testArray){ //eslint-disable-line
+  var addArr = sum(sum(testArray[0],testArray[1])[0], testArray[2])[0];
+
+  return[addArr, testArray + ' was passed in as an array of numbers, and ' + addArr + ' is their sum.'];
 
 }
 
 // Here is the test for sumArray(); uncomment it to run it
-// testSumArray(testArray);
+//testSumArray(testArray);
 
 
 /////////////////////////////////////
@@ -162,8 +188,9 @@ new branch for your work on the next question!
 
 // Write your code here
 function multiplyArray(testArray){ //eslint-disable-line
-
+  var multiArr = multiply(multiply(testArray[0], testArray[1])[0], testArray[2])[0];
+  return [multiArr, 'The numbers ' + testArray + ' have a product of ' + multiArr + '.'];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(2,3,4);
+testMultiplyArray(2,3,4);
